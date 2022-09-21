@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package mathematical;
+option go_package = "/";
+
+message EquationEvaluationRequest {
+  string expression = 1;
+}
+
+message EquationEvaluationResponse {
+  double result = 1;
+}
